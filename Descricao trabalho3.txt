@@ -1,0 +1,48 @@
+Trabalho III - Alinhamento genético - CUDA
+Individual
+
+==================================================================
+Desenvolver um programa que:
+-----------------------------
+
+1- Encontre a quantidade de vezes que cada posição é igual entre os 10 primeiros genomas do Corona Virus 
+
+Dicas:
+    --> o programa exemplo 2pesquisar.c faz a comparação sequencial de 2 genomas em CPU
+    --> o programa exemplo 7compara_2vetores.cu faz comparação paralela de dois vetores em GPU
+
+    --> use a maquina do lab para realizar o trabalho:
+
+		Dar permissões na chave pública:
+			chmod 700 key
+
+		Instalar ssh
+			sudo apt install ssh
+
+		Efetuar conexão remota:
+			ssh -i key labinf@200.132.195.142
+
+		Fazer uma cópia da pasta de trabalho:
+			cp -r tra3/ <seu-nome>
+
+			cd <seu-nome>
+
+		Para copiar arquivos para o servidor:
+			scp -i key *.c labinf@200.132.195.142:/home/labinf/seu-nome
+
+
+
+==================================================================
+Entrega do trabalho:
+--------------------
+- arquivo zipado no portal contendo:
+	- arquivo (cuda.c) 	 - implementação paralela com cuda
+	- arquivo (Makefile) 	 - make
+
+
+==================================================================
+Avaliação do trabalho:
+--------------------
+50 pontos - Funcionalidade, lógica de paralelização / divisão do trabalho.
+
+==================================================================
